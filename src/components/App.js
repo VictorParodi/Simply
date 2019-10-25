@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ResourceList from './ResourceList.js';
 
 const App = () => {
     const [resource, setResource] = useState('POST');
@@ -10,7 +11,7 @@ const App = () => {
                 <button onClick={() => setResource('POST')} className="ui basic button">POSTS</button>
                 <button onClick={() => setResource('TODOS')} className="ui basic button">TODOS</button>
             </div>
-            <h3>{resource}</h3>
+            <ResourceList resource={resource}/>
         </div>
     );
 }
