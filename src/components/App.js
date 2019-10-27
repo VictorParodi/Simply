@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ResourceList from './ResourceList.js';
 
 const App = () => {
-    const [resource, setResource] = useState('posts');
+    const [resource, setResource] = useState('todos');
 
     return (
         <div className="ui container">
