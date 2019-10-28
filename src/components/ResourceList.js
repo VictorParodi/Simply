@@ -13,8 +13,10 @@ const ResourceList = ({resource}) => {
 
     return (
         <div>
-            <h3>Resources</h3>
-            <p>{resources.length}</p>
+            <h3>Resources: {resource}</h3>
+            <ul>
+                {resources.map(record => <li key={record.id}>{record.title}</li>)}
+            </ul>
         </div>
     );
 }
